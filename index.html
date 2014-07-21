@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Setlits</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="$views/css/list.css">
+	<link rel="stylesheet" href="$views/css/buttons.css">
+	<link rel="stylesheet" href="$views/css/image.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="libs/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+	<div class="container">
+            <div class="hero-unit">
+                <h1>What's the Setlist?</h1>
+                <p class="byline hidden">
+                    The most likely songs to be played @
+                    <input type="text" id="txtSearchFestival" class="input" placeholder="{festival}"/>
+                <p>
+                <div id="output">
+
+
+                </div>
+            </div>
+    </div>
+	<div id="festivals"><ul id="festivalsContent"></ul></div>
+	<div id="festival"><ul id="festivalContent"></ul></div>
+	<div id="artist"></div>
+	<script src="libs/jquery-1.10.2.min.js"></script>
+	<script src="scripts/typeahead.min.js"></script>
+    <script src="scripts/spin.min.js"></script>
+	<script src="scripts/setlistService.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

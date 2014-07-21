@@ -1,0 +1,27 @@
+{
+	"AppDescription": {
+		"en": ""
+	},
+	"AppIcon": {
+		"36x18": "setlist-icon.png"
+	},
+	"AppName": {
+		"en": "Setlist"
+	},
+	"BundleIdentifier": "setlist",
+	"BundleType": "Application",
+	"BundleVersion": "0.1",
+	"Dependencies": {
+	  "api": "1.0.0",
+	  "views": "1.10.0"
+  },
+	"RequiredInterface": 1,
+	"RequiredPermissions": [
+	    "http://nadazipp.se",
+	    "http://ws.audioscrobbler.com"
+	],
+	"SupportedLanguages": [
+		"en"
+	],
+	"VendorIdentifier": "se.svt"
+}
