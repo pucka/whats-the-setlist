@@ -5,7 +5,7 @@
 
     SetlistService.prototype.init = function() {
     	this.mbStub = 'http://www.musicbrainz.org/ws/2/artist/?query=';
-		this.setlistStub = 'http://nadazipp.se/svt/wowhack2/setlist.php?mbid='; //setlist.fm does not support jsonp :<
+		this.setlistStub = 'php/setlist.php?mbid='; //setlist.fm does not support jsonp :<
 		this.artistCache = [];
     };
 
@@ -24,12 +24,6 @@
     	} else {
     		this.getMBID(artist).done( function(data) {
 	    		var mbid;
-	    		/*$(data).find("artist>name").each( function (i) {
-	                if (artist == $(this).text().toLowerCase()) {
-	                    mbid = $(this).parent().attr('id');
-	                    return false;
-	                }
-	            });*/
 
 	    		mbid = $(data).find("artist").first().attr('id');
 
